@@ -1,0 +1,292 @@
+Auto-Transcript Start Time:  17:22:30, 10 Jun 2024 W. Europe Daylight Time 
+Current Directory: "C:\Users\S308056\Desktop\fluent_meshing_step_prog"
+
+              Welcome to ANSYS Fluent 2023 R2
+
+              Copyright 1987-2023 ANSYS, Inc. All Rights Reserved.
+              Unauthorized use, distribution or duplication is prohibited.
+              This product is subject to U.S. laws governing export and re-export.
+              For full Legal Notice, see documentation.
+
+Build Time: May 29 2023 07:52:07 EDT  Build Id: 10212  
+ 
+Connected License Server List:	1055@ansys.laib.polito.it
+
+     --------------------------------------------------------------
+     This is an academic version of ANSYS FLUENT. Usage of this product
+     license is limited to the terms and conditions specified in your ANSYS
+     license form, additional terms section.
+     --------------------------------------------------------------
+Host spawning Node 0 on machine "Pcld338" (win64).
+
+-------------------------------------------------------------------------------
+ID    Hostname  Core  O.S.         PID    Vendor                         
+-------------------------------------------------------------------------------
+n3    Pcld338   4/4  Windows-x64  9420   Intel(R) Core(TM) i5-6500      
+n2    Pcld338   3/4  Windows-x64  11168  Intel(R) Core(TM) i5-6500      
+n1    Pcld338   2/4  Windows-x64  12248  Intel(R) Core(TM) i5-6500      
+n0*   Pcld338   1/4  Windows-x64  13244  Intel(R) Core(TM) i5-6500      
+host  Pcld338        Windows-x64  3268   Intel(R) Core(TM) i5-6500      
+
+MPI Option Selected: intel
+Selected system interconnect: default
+-------------------------------------------------------------------------------
+
+Cleanup script file is C:\\Users\\S308056\\Desktop\\fluent_meshing_step_prog\\cleanup-fluent-Pcld338-3268.bat
+
+Posting ANSYS Product Improvement Program startup data
+Done.
+
+> (cx-gui-do cx-activate-item "Key Behavioral Changes*PanelButtons*PushButton1(OK)")
+(cx-gui-do cx-activate-item "MenuBar*ReadSubMenu*Case...")
+(cx-gui-do cx-activate-item "MenuBar*ReadSubMenu*Case...")
+(cx-gui-do cx-set-file-dialog-entries "Select File" '( "F:/POLITO/Innovations/progettp_innovations/pr_stent_mesh1.cas.h5") "CFF Case Files (*.cas.h5 *.msh.h5 *.MSH.h5 )")
+Fast-loading "V:\ANSYS Inc\v232\fluent\fluent23.2.0\\addons\afd\lib\hdfio.bin"
+Done.
+
+Pcld338 has other FLUENT parallel processes running.                       Process affinity not being set.
+
+Reading from Pcld338:"F:/POLITO/Innovations/progettp_innovations/pr_stent_mesh1.cas.h5" in NODE0 mode ...
+  Reading mesh ...
+      150679 cells,     1 cell zone  ...
+         150679 polyhedra cells,  zone id: 157147
+     1034569 faces,    13 face zones ...
+         975203 polygonal interior faces,  zone id: 157146
+           4669 polygonal wall faces,  zone id: 157012
+            196 polygonal mass-flow-inlet faces,  zone id: 157011
+            194 polygonal pressure-outlet faces,  zone id: 157010
+           4638 polygonal wall faces,  zone id: 157009
+          11752 polygonal wall faces,  zone id: 157008
+          14829 polygonal wall faces,  zone id: 157007
+           4190 triangular wall faces,  zone id: 22
+          15840 triangular wall faces,  zone id: 18
+           1456 triangular wall faces,  zone id: 14
+             73 triangular pressure-outlet faces,  zone id: 10
+             73 triangular mass-flow-inlet faces,  zone id: 6
+           1456 triangular wall faces,  zone id: 2
+      912661 nodes,    19 node zones ...
+
+Building...
+     mesh
+	auto partitioning mesh by Metis (fast),
+	distributing mesh
+		parts....,
+		faces....,
+		nodes....,
+		cells....,
+        bandwidth reduction using Reverse Cuthill-McKee: 37594/3499 = 10.7442
+Removing 4190 unreferenced faces, zone 22.
+Removing 15840 unreferenced faces, zone 18.
+Removing 1456 unreferenced faces, zone 14.
+Removing 73 unreferenced faces, zone 10.
+Removing 73 unreferenced faces, zone 6.
+Removing 1456 unreferenced faces, zone 2.Relabel entities after detecting unreferenced faces.
+
+     materials,
+     interface,
+     domains,
+     zones,
+	interior-p-157146
+	solid-pr_dist_wall:157012
+	solid-pr_intel:157011
+	solid-pr_outlet:157010
+	solid-pr_prox_wall:157009
+	solid-pr_stent:157008
+	solid-pr_stent_wall:157007
+	Skipping zone solid-pr_stent_wall (not referenced by grid).
+	Skipping zone solid-pr_stent (not referenced by grid).
+	Skipping zone solid-pr_prox_wall (not referenced by grid).
+	Skipping zone solid-pr_outlet (not referenced by grid).
+	Skipping zone solid-pr_intel (not referenced by grid).
+	Skipping zone solid-pr_dist_wall (not referenced by grid).
+	blood
+     parallel,
+The automatic selection for flux type has changed to Rhie-Chow: momentum based.
+
+Done.
+
+Preparing mesh for display...
+Done.
+(cx-gui-do cx-activate-item "Information*OK")
+(cx-gui-do cx-activate-item "ToolBar*Pointer*rotate")
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-18.8158 -22.4997 19.9157) '(0 0 0) '(0.377393 0.273755 0.348725) 0 0)
+(cx-use-window-id 51)
+(handle-key "control ??")
+(cx-use-window-id 51)
+(dolly-camera -8.12012 -2.17851 0)
+(cx-gui-do cx-activate-item "Ribbon*Frame1*Frame2(Domain)*Table1*Table3(Mesh)*PushButton6(Scale)")
+(cx-gui-do cx-set-list-selections "Scale Mesh*Table1*Table2(Scaling)*DropDownList2(Mesh Was Created In)" '( 2))
+(cx-gui-do cx-activate-item "Scale Mesh*Table1*Table2(Scaling)*DropDownList2(Mesh Was Created In)")
+(cx-gui-do cx-activate-item "Scale Mesh*Table1*Table2(Scaling)*PushButton4(Scale)")
+(cx-gui-do cx-activate-item "Scale Mesh*PanelButtons*PushButton1(Close)")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|General"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|General"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|General"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|General"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Models"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Models"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Models"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Models"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Models|Viscous (SST k-omega)"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Models|Viscous (SST k-omega)"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Models|Viscous (SST k-omega)"))
+(cx-gui-do cx-set-toggle-button2 "Viscous Model*Table1*ToggleBox1(Model)*Laminar" #t)
+(cx-gui-do cx-activate-item "Viscous Model*Table1*ToggleBox1(Model)*Laminar")
+(cx-gui-do cx-activate-item "Viscous Model*PanelButtons*PushButton1(OK)")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Models|Viscous (Laminar)"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Materials|Fluid"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Materials|Fluid"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Materials|Fluid"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Materials|Fluid"))
+(cx-gui-do cx-list-tree-right-click "NavigationPane*Frame2*Table1*List_Tree2" )
+(cx-gui-do cx-activate-item "MenuBar*PopupMenuTree-Fluid*New...")
+(cx-gui-do cx-set-text-entry "Create/Edit Materials*Table1*Frame1*Table1*TextEntry1(Name)" "blood")
+(cx-gui-do cx-set-list-selections "Create/Edit Materials*Table2*Table1(Properties)*DropDownList4(Density)" '( 0))
+(cx-gui-do cx-activate-item "Create/Edit Materials*Table2*Table1(Properties)*DropDownList4(Density)")
+(cx-gui-do cx-set-list-selections "Create/Edit Materials*Table2*Table1(Properties)*DropDownList7(Viscosity)" '( 10))
+(cx-gui-do cx-activate-item "Create/Edit Materials*Table2*Table1(Properties)*DropDownList7(Viscosity)")
+(cx-gui-do cx-activate-item "Carreau Model*PanelButtons*PushButton2(Cancel)")
+(cx-gui-do cx-set-list-selections "Create/Edit Materials*Table2*Table1(Properties)*DropDownList4(Density)" '( 0))
+(cx-gui-do cx-activate-item "Create/Edit Materials*Table2*Table1(Properties)*DropDownList4(Density)")
+(cx-gui-do cx-set-real-entry-list "Create/Edit Materials*RealEntry10" '( 1060))
+(cx-gui-do cx-set-list-selections "Create/Edit Materials*Table2*Table1(Properties)*DropDownList7(Viscosity)" '( 10))
+(cx-gui-do cx-activate-item "Create/Edit Materials*Table2*Table1(Properties)*DropDownList7(Viscosity)")
+(cx-gui-do cx-set-real-entry-list "Carreau Model*Table1*Table2*RealEntry1(Time Constant, lambda)" '( 25))
+(cx-gui-do cx-activate-item "Carreau Model*Table1*Table2*RealEntry1(Time Constant, lambda)")
+(cx-gui-do cx-set-real-entry-list "Carreau Model*Table1*Table2*RealEntry2(Power-Law Index, n)" '( 0.025))
+(cx-gui-do cx-activate-item "Carreau Model*Table1*Table2*RealEntry2(Power-Law Index, n)")
+(cx-gui-do cx-set-real-entry-list "Carreau Model*Table1*Table2*RealEntry3(Zero Shear Viscosity)" '( 0.25))
+(cx-gui-do cx-activate-item "Carreau Model*Table1*Table2*RealEntry3(Zero Shear Viscosity)")
+(cx-gui-do cx-set-real-entry-list "Carreau Model*Table1*Table2*RealEntry4(Infinite Shear Viscosity)" '( 0.0035))
+(cx-gui-do cx-activate-item "Carreau Model*Table1*Table2*RealEntry4(Infinite Shear Viscosity)")
+(cx-gui-do cx-activate-item "Carreau Model*PanelButtons*PushButton2(Cancel)")
+(cx-gui-do cx-activate-item "Create/Edit Materials*PushButton15(Edit)")
+(cx-gui-do cx-set-real-entry-list "Carreau Model*Table1*Table2*RealEntry1(Time Constant, lambda)" '( 25))
+(cx-gui-do cx-activate-item "Carreau Model*Table1*Table2*RealEntry1(Time Constant, lambda)")
+(cx-gui-do cx-set-real-entry-list "Carreau Model*Table1*Table2*RealEntry2(Power-Law Index, n)" '( 0.025))
+(cx-gui-do cx-activate-item "Carreau Model*Table1*Table2*RealEntry2(Power-Law Index, n)")
+(cx-gui-do cx-set-real-entry-list "Carreau Model*Table1*Table2*RealEntry3(Zero Shear Viscosity)" '( 0.25))
+(cx-gui-do cx-activate-item "Carreau Model*Table1*Table2*RealEntry3(Zero Shear Viscosity)")
+(cx-gui-do cx-set-real-entry-list "Carreau Model*Table1*Table2*RealEntry4(Infinite Shear Viscosity)" '( 0.0035))
+(cx-gui-do cx-activate-item "Carreau Model*Table1*Table2*RealEntry4(Infinite Shear Viscosity)")
+(cx-gui-do cx-activate-item "Carreau Model*PanelButtons*PushButton1(OK)")
+(cx-gui-do cx-activate-item "Question*OK")
+(cx-gui-do cx-activate-item "Create/Edit Materials*PanelButtons*PushButton3(Change/Create)")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Materials|Fluid|blood"))
+(cx-gui-do cx-activate-item "Create/Edit Materials*PanelButtons*PushButton1(Close)")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Materials|Fluid|blood"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Materials|Fluid|blood"))
+(cx-gui-do cx-list-tree-right-click "NavigationPane*Frame2*Table1*List_Tree2" )
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Materials|Fluid|blood"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Materials|Fluid|blood"))
+(cx-gui-do cx-list-tree-right-click "NavigationPane*Frame2*Table1*List_Tree2" )
+(cx-gui-do cx-activate-item "MenuBar*PopupMenuTree-blood*Edit...")
+(cx-gui-do cx-activate-item "Create/Edit Materials*PanelButtons*PushButton1(Close)")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Materials|Fluid|blood"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Materials|Fluid|blood"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Materials|Fluid|blood"))
+(cx-gui-do cx-activate-item "Create/Edit Materials*PanelButtons*PushButton1(Close)")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Cell Zone Conditions|Fluid"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Cell Zone Conditions|Fluid"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Cell Zone Conditions|Fluid"))
+(cx-gui-do cx-activate-tab-index "Fluid*Frame2*Table3*Frame1" 0)
+(cx-gui-do cx-activate-tab-index "Fluid*Frame2*Table3*Frame1" 1)
+(cx-gui-do cx-activate-tab-index "Fluid*Frame2*Table3*Frame1" 0)
+(cx-gui-do cx-activate-tab-index "Fluid*Frame2*Table3*Frame1" 2)
+(cx-gui-do cx-activate-tab-index "Fluid*Frame2*Table3*Frame1" 0)
+(cx-gui-do cx-activate-tab-index "Fluid*Frame2*Table3*Frame1" 2)
+(cx-gui-do cx-activate-tab-index "Fluid*Frame2*Table3*Frame1" 0)
+(cx-gui-do cx-activate-tab-index "Fluid*Frame2*Table3*Frame1" 3)
+(cx-gui-do cx-activate-tab-index "Fluid*Frame2*Table3*Frame1" 0)
+(cx-gui-do cx-activate-tab-index "Fluid*Frame2*Table3*Frame1" 4)
+(cx-gui-do cx-activate-tab-index "Fluid*Frame2*Table3*Frame1" 0)
+(cx-gui-do cx-activate-tab-index "Fluid*Frame2*Table3*Frame1" 5)
+(cx-gui-do cx-activate-tab-index "Fluid*Frame2*Table3*Frame1" 0)
+(cx-gui-do cx-activate-tab-index "Fluid*Frame2*Table3*Frame1" 6)
+(cx-gui-do cx-activate-tab-index "Fluid*Frame2*Table3*Frame1" 0)
+(cx-gui-do cx-activate-tab-index "Fluid*Frame2*Table3*Frame1" 7)
+(cx-gui-do cx-activate-tab-index "Fluid*Frame2*Table3*Frame1" 0)
+(cx-gui-do cx-activate-tab-index "Fluid*Frame2*Table3*Frame1" 8)
+(cx-gui-do cx-activate-tab-index "Fluid*Frame2*Table3*Frame1" 0)
+(cx-gui-do cx-activate-item "Fluid*PanelButtons*PushButton1(OK)")
+(cx-gui-do cx-enable-apply-button "Fluid")
+(cx-gui-do cx-activate-item "Fluid*PanelButtons*PushButton2(Cancel)")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Boundary Conditions|Inlet|solid-pr_intel:157011 (mass-flow-inlet, id=157011)"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Boundary Conditions|Inlet|solid-pr_intel:157011 (mass-flow-inlet, id=157011)"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Boundary Conditions|Inlet|solid-pr_intel:157011 (mass-flow-inlet, id=157011)"))
+(cx-gui-do cx-activate-tab-index "Mass-Flow Inlet*Frame2*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Mass-Flow Inlet*Frame2*Frame2" 1)
+(cx-gui-do cx-activate-tab-index "Mass-Flow Inlet*Frame2*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Mass-Flow Inlet*Frame2*Frame2" 2)
+(cx-gui-do cx-activate-tab-index "Mass-Flow Inlet*Frame2*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Mass-Flow Inlet*Frame2*Frame2" 3)
+(cx-gui-do cx-activate-tab-index "Mass-Flow Inlet*Frame2*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Mass-Flow Inlet*Frame2*Frame2" 4)
+(cx-gui-do cx-activate-tab-index "Mass-Flow Inlet*Frame2*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Mass-Flow Inlet*Frame2*Frame2" 5)
+(cx-gui-do cx-activate-tab-index "Mass-Flow Inlet*Frame2*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Mass-Flow Inlet*Frame2*Frame2" 6)
+(cx-gui-do cx-activate-tab-index "Mass-Flow Inlet*Frame2*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Mass-Flow Inlet*Frame2*Frame2" 7)
+(cx-gui-do cx-activate-tab-index "Mass-Flow Inlet*Frame2*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Mass-Flow Inlet*Frame2*Frame2" 8)
+(cx-gui-do cx-activate-tab-index "Mass-Flow Inlet*Frame2*Frame2" 0)
+(cx-gui-do cx-set-expression-entry "Mass-Flow Inlet*Frame2*Frame2*Frame1(Momentum)*Table1*Table8*ExpressionEntry1(Mass Flow Rate)" '("0" . 0))
+(cx-gui-do cx-set-expression-entry "Mass-Flow Inlet*Frame2*Frame2*Frame1(Momentum)*Table1*Table8*ExpressionEntry1(Mass Flow Rate)" '("0" . 0))
+(cx-gui-do cx-activate-item "Mass-Flow Inlet*PanelButtons*PushButton2(Cancel)")
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-60.0804 -16.139 -55.5365) '(0 0 0) '(-0.00154833 -0.0423537 -0.170905) 0 0)
+(cx-use-window-id 51)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.709172 1.51515 2.24067) '(0 0 0) '(0.118701 -0.0103872 -0.0500772) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(6.28628 0.339884 7.45861) '(0 0 0) '(-0.0599099 0.016804 0.0515417) 0 0)
+(cx-use-window-id 51)
+(handle-key "control ??")
+(cx-use-window-id 51)
+(dolly-camera 2.54104 -0.744761 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(6.94948 -0.586168 4.68946) '(0 0 0) '(-0.0417035 0.0165453 0.0674845) 0 0)
+(cx-use-window-id 51)
+(handle-key "control ??")
+(cx-use-window-id 51)
+(dolly-camera 2.16918 -0.380249 0)
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Cell Zone Conditions|Fluid|blood (fluid, id=157147)"))
+(cx-gui-do cx-list-tree-right-click "NavigationPane*Frame2*Table1*List_Tree2" )
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Cell Zone Conditions|Fluid|blood (fluid, id=157147)"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Cell Zone Conditions|Fluid|blood (fluid, id=157147)"))
+(cx-gui-do cx-list-tree-right-click "NavigationPane*Frame2*Table1*List_Tree2" )
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Boundary Conditions|Inlet|solid-pr_intel:157011 (mass-flow-inlet, id=157011)"))
+(cx-gui-do cx-list-tree-right-click "NavigationPane*Frame2*Table1*List_Tree2" )
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Boundary Conditions|Inlet|solid-pr_intel:157011 (mass-flow-inlet, id=157011)"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Boundary Conditions|Inlet|solid-pr_intel:157011 (mass-flow-inlet, id=157011)"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Boundary Conditions|Inlet|solid-pr_intel:157011 (mass-flow-inlet, id=157011)"))
+(cx-gui-do cx-set-expression-entry "Mass-Flow Inlet*Frame2*Frame2*Frame1(Momentum)*Table1*Table8*ExpressionEntry1(Mass Flow Rate)" '("0" . 0))
+(cx-gui-do cx-activate-item "Mass-Flow Inlet*PanelButtons*PushButton2(Cancel)")
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-17.6811 -2.26274 -31.1274) '(0 0 0) '(0.246567 -0.00498033 -0.00306186) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.122204 -7.3647 1.81848) '(0 0 0) '(-0.242291 -0.00101757 -0.0203406) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(2.02476 1.86665 5.26307) '(0 0 0) '(0.107633 0.0248573 0.0792693) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(5.35543 -1.0752 4.25644) '(0 0 0) '(-0.0462993 0.00920415 0.0590618) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(3.34435 1.31958 1.48978) '(0 0 0) '(0.0123748 -0.0031873 -0.0238667) 0 0)
+(cx-use-window-id 51)
+/exit y
+
+Posting ANSYS Product Improvement Program performance data 
+Done.
+(cx-gui-do cx-activate-item "Question*OK")
+Auto-Transcript Stop Time:  18:13:06, 10 Jun 2024 W. Europe Daylight Time 
+Total Transcript Time: 50 Minute 36 Second.

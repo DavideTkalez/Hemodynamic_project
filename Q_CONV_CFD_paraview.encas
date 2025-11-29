@@ -1,0 +1,20 @@
+FORMAT
+type:  ensight gold
+GEOMETRY
+model: Q_CONV_CFD_paraview.geo
+VARIABLE
+scalar per node: velocity_magnitude                               Q_CONV_CFD_paraview.scl1
+scalar per node: x_velocity                                       Q_CONV_CFD_paraview.scl2
+scalar per node: y_velocity                                       Q_CONV_CFD_paraview.scl3
+scalar per node: z_velocity                                       Q_CONV_CFD_paraview.scl4
+scalar per node: vorticity_mag                                    Q_CONV_CFD_paraview.scl5
+scalar per node: helicity                                         Q_CONV_CFD_paraview.scl6
+scalar per node: x_vorticity                                      Q_CONV_CFD_paraview.scl7
+scalar per node: y_vorticity                                      Q_CONV_CFD_paraview.scl8
+scalar per node: z_vorticity                                      Q_CONV_CFD_paraview.scl9
+scalar per node: wall_shear                                       Q_CONV_CFD_paraview.scl10
+scalar per node: x_wall_shear                                     Q_CONV_CFD_paraview.scl11
+scalar per node: y_wall_shear                                     Q_CONV_CFD_paraview.scl12
+scalar per node: z_wall_shear                                     Q_CONV_CFD_paraview.scl13
+vector per node: velocity                                         Q_CONV_CFD_paraview.vel
+

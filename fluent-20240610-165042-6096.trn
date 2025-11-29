@@ -1,0 +1,1052 @@
+Auto-Transcript Start Time:  16:50:42, 10 Jun 2024 W. Europe Daylight Time 
+Current Directory: "C:\Users\S308056\Desktop\fluent_meshing_step_prog"
+
+              Welcome to ANSYS Fluent 2023 R2
+
+              Copyright 1987-2023 ANSYS, Inc. All Rights Reserved.
+              Unauthorized use, distribution or duplication is prohibited.
+              This product is subject to U.S. laws governing export and re-export.
+              For full Legal Notice, see documentation.
+
+Build Time: May 29 2023 07:52:07 EDT  Build Id: 10212  
+ 
+Connected License Server List:	1055@ansys.laib.polito.it
+
+     --------------------------------------------------------------
+     This is an academic version of ANSYS FLUENT. Usage of this product
+     license is limited to the terms and conditions specified in your ANSYS
+     license form, additional terms section.
+     --------------------------------------------------------------
+Host spawning Node 0 on machine "Pcld338" (win64).
+
+-------------------------------------------------------------------------------
+ID    Hostname  Core  O.S.         PID    Vendor                         
+-------------------------------------------------------------------------------
+n3    Pcld338   4/4  Windows-x64  13496  Intel(R) Core(TM) i5-6500      
+n2    Pcld338   3/4  Windows-x64  12056  Intel(R) Core(TM) i5-6500      
+n1    Pcld338   2/4  Windows-x64  4076   Intel(R) Core(TM) i5-6500      
+n0*   Pcld338   1/4  Windows-x64  10528  Intel(R) Core(TM) i5-6500      
+host  Pcld338        Windows-x64  6568   Intel(R) Core(TM) i5-6500      
+
+MPI Option Selected: intel
+Selected system interconnect: default
+-------------------------------------------------------------------------------
+
+Cleanup script file is C:\\Users\\S308056\\Desktop\\fluent_meshing_step_prog\\cleanup-fluent-Pcld338-6568.bat
+(cx-gui-do cx-activate-tab-index "NavigationPane*Frame1(TreeTab)" 0)
+
+Posting ANSYS Product Improvement Program startup data
+Done.
+
+Meshing> (cx-gui-do cx-activate-item "Key Behavioral Changes*PanelButtons*PushButton1(OK)")
+(cx-gui-do cx-activate-item "MenuBar*ImportSubMenu*CAD...")
+(cx-gui-do cx-activate-item "Import CAD Geometry*Table1*Frame3*Frame2*PushButton2")
+(cx-gui-do cx-set-file-dialog-entries "Select File" '( "F:/POLITO/Innovations/progettp_innovations/pr_dist_wall.STL") "All Files (*)")
+(cx-gui-do cx-activate-item "Import CAD Geometry*Table1*PushButton10(Options)")
+(cx-gui-do cx-set-list-selections "CAD Options*Table1*Frame4(Object Creation)*DropDownList2(One Object per)" '( 3))
+(cx-gui-do cx-activate-item "CAD Options*Table1*Frame4(Object Creation)*DropDownList2(One Object per)")
+(cx-gui-do cx-set-list-selections "CAD Options*Table1*Frame4(Object Creation)*DropDownList3(One Zone per)" '( 1))
+(cx-gui-do cx-activate-item "CAD Options*Table1*Frame4(Object Creation)*DropDownList3(One Zone per)")
+(cx-gui-do cx-activate-item "CAD Options*PanelButtons*PushButton1(Apply)")
+(cx-gui-do cx-activate-item "Import CAD Geometry*PanelButtons*PushButton3(Import)")
+
+Importing one geom object per file and one zone per face ...
+    v:\\ANSYS Inc\\v232\\commonfiles\\CPython\\3_10\\winx64\\Release\\python\\..\\Ansys\\TGrid\\CADReaders.py started by S308056 on Pcld338 winx64 on Mon Jun 10 16:52:10 2024
+    using Python 3.10.9 (remotes/origin/4e018266dafe29ec2836492d71d245fcfd366d07-dirty:4e018266, Jan  3 2) [MSC v.1920 64 bit (AMD64)]
+    
+    using Ansys.Meshing.FieldMesher build May 30 2023 15:18:26
+    
+    running ANSYS TGrid CADToTGridConverter ...
+    setting up parameters ...
+    setting up parameters done.
+    running conversion ...
+    converting 1 file(s) from Workbench to FLTG using output path 'C:\\Users\\S308056\\AppData\\Local\\Temp/out17180311296096.tgf'
+    converting file 'pr_dist_wall.STL' (1 of 1) from Workbench to FLTG using output path 'C:\\Users\\S308056\\AppData\\Local\\Temp'
+    importing data ...
+    importing meshing model in STL format from file 'F:/POLITO/Innovations/progettp_innovations/pr_dist_wall.STL' ...
+    solid 'solid pr_dist_wall'
+    number of facets: 1456
+    1456 facets imported ...
+    preparing model ...
+    processing data ...
+    removing named collections of entities ...
+    removing named collections of entities stopped, no named collections selected.
+    analyzing feature edges ...
+        Data information
+            Meshing model
+                Attributes:
+                    'LengthUnit': '[mm]'
+                Entity summary:
+                    Component: 2
+                    Body     : 1
+                    Face     : 1
+                Tessellation summary:
+                    Face facets: 1456
+                Bounding box:
+                    (0.01795403659343719, 0.01010159030556679, 0.01045782119035721) x (20.07624435424805, 6.963744640350342, 4.489084720611572)
+                Assembly component hierarchy:
+                    'F:/POLITO/Innovations/progettp_innovations/pr_dist_wall.STL'
+                      'solid pr_dist_wall'
+    
+    
+    exporting FLTG data to file 'C:\\Users\\S308056\\AppData\\Local\\Temp\\out17180311296096.tgf' ...
+    writing face-based mesh file 'C:\\Users\\S308056\\AppData\\Local\\Temp\\out17180311296096.tgf' ...
+    ======== Exported Data ========
+    Entity summary:
+        Object       : 1
+        Zone         : 1
+    
+    running conversion done.
+    running ANSYS TGrid CADToTGridConverter done.
+    ran ANSYS TGrid CADToTGridConverter in 0.076 [s]
+Reading "C:\Users\S308056\AppData\Local\Temp/out17180311296096.tgf"...
+nodes: 780
+faces: 1456
+cells: 0
+reading 780 storage data (id 1, type 41, double precision binary).
+generating pointers...done.
+extracting boundary entities...
+ 780 boundary nodes.
+ 1456 boundary faces.
+ 1 boundary face zones.
+done.
+analyzing boundary connectivity...done.
+(newline)
+
+
+Meshing> (cx-gui-do cx-activate-tab-index "NavigationPane*Frame1(TreeTab)" 1)
+(cx-gui-do cx-set-toggle-button2 "Import CAD Geometry*Table1*Table2*CheckButton2(Append)" #t)
+(cx-gui-do cx-activate-item "Import CAD Geometry*Table1*Table2*CheckButton2(Append)")
+(cx-gui-do cx-activate-item "Import CAD Geometry*Table1*Frame3*Frame2*PushButton2")
+(cx-gui-do cx-set-file-dialog-entries "Select File" '( "pr_intel.STL") "All Files (*)")
+(cx-gui-do cx-activate-item "Import CAD Geometry*PanelButtons*PushButton3(Import)")
+
+Importing one geom object per file and one zone per face ...
+    v:\\ANSYS Inc\\v232\\commonfiles\\CPython\\3_10\\winx64\\Release\\python\\..\\Ansys\\TGrid\\CADReaders.py started by S308056 on Pcld338 winx64 on Mon Jun 10 16:52:37 2024
+    using Python 3.10.9 (remotes/origin/4e018266dafe29ec2836492d71d245fcfd366d07-dirty:4e018266, Jan  3 2) [MSC v.1920 64 bit (AMD64)]
+    
+    using Ansys.Meshing.FieldMesher build May 30 2023 15:18:26
+    
+    running ANSYS TGrid CADToTGridConverter ...
+    setting up parameters ...
+    setting up parameters done.
+    running conversion ...
+    converting 1 file(s) from Workbench to FLTG using output path 'C:\\Users\\S308056\\AppData\\Local\\Temp/out17180311566096.tgf'
+    converting file 'pr_intel.STL' (1 of 1) from Workbench to FLTG using output path 'C:\\Users\\S308056\\AppData\\Local\\Temp'
+    importing data ...
+    importing meshing model in STL format from file 'F:/POLITO/Innovations/progettp_innovations/pr_intel.STL' ...
+    solid 'solid pr_intel'
+    number of facets: 73
+    73 facets imported ...
+    preparing model ...
+    processing data ...
+    removing named collections of entities ...
+    removing named collections of entities stopped, no named collections selected.
+    analyzing feature edges ...
+        Data information
+            Meshing model
+                Attributes:
+                    'LengthUnit': '[mm]'
+                Entity summary:
+                    Component: 2
+                    Body     : 1
+                    Face     : 1
+                Tessellation summary:
+                    Face facets: 73
+                Bounding box:
+                    (0.01730211079120636, 0.009663403034210205, 0.01045782119035721) x (1.174144506454468, 2.799935817718506, 2.977872848510742)
+                Assembly component hierarchy:
+                    'F:/POLITO/Innovations/progettp_innovations/pr_intel.STL'
+                      'solid pr_intel'
+    
+    
+    exporting FLTG data to file 'C:\\Users\\S308056\\AppData\\Local\\Temp\\out17180311566096.tgf' ...
+    writing face-based mesh file 'C:\\Users\\S308056\\AppData\\Local\\Temp\\out17180311566096.tgf' ...
+    ======== Exported Data ========
+    Entity summary:
+        Object       : 1
+        Zone         : 1
+    
+    running conversion done.
+    running ANSYS TGrid CADToTGridConverter done.
+    ran ANSYS TGrid CADToTGridConverter in 0.070 [s]
+Reading "C:\Users\S308056\AppData\Local\Temp/out17180311566096.tgf"...
+nodes: 75
+faces: 73
+cells: 0
+reading 75 storage data (id 1, type 41, double precision binary).
+appending mesh...
+	Zone id collision: 1 changed to 5.
+	Zone id collision: 2 changed to 6.
+done.
+generating pointers...done.
+extracting boundary entities...
+ 855 boundary nodes.
+ 1529 boundary faces.
+ 2 boundary face zones.
+done.
+analyzing boundary connectivity...done.
+(cx-gui-do cx-activate-item "Import CAD Geometry*Table1*Frame3*Frame2*PushButton2")
+(cx-gui-do cx-set-file-dialog-entries "Select File" '( "pr_outlet.STL") "All Files (*)")
+(cx-gui-do cx-activate-item "Import CAD Geometry*PanelButtons*PushButton3(Import)")
+
+Importing one geom object per file and one zone per face ...
+    v:\\ANSYS Inc\\v232\\commonfiles\\CPython\\3_10\\winx64\\Release\\python\\..\\Ansys\\TGrid\\CADReaders.py started by S308056 on Pcld338 winx64 on Mon Jun 10 16:52:45 2024
+    using Python 3.10.9 (remotes/origin/4e018266dafe29ec2836492d71d245fcfd366d07-dirty:4e018266, Jan  3 2) [MSC v.1920 64 bit (AMD64)]
+    
+    using Ansys.Meshing.FieldMesher build May 30 2023 15:18:26
+    
+    running ANSYS TGrid CADToTGridConverter ...
+    setting up parameters ...
+    setting up parameters done.
+    running conversion ...
+    converting 1 file(s) from Workbench to FLTG using output path 'C:\\Users\\S308056\\AppData\\Local\\Temp/out17180311646096.tgf'
+    converting file 'pr_outlet.STL' (1 of 1) from Workbench to FLTG using output path 'C:\\Users\\S308056\\AppData\\Local\\Temp'
+    importing data ...
+    importing meshing model in STL format from file 'F:/POLITO/Innovations/progettp_innovations/pr_outlet.STL' ...
+    solid 'solid pr_outlet'
+    number of facets: 73
+    73 facets imported ...
+    preparing model ...
+    processing data ...
+    removing named collections of entities ...
+    removing named collections of entities stopped, no named collections selected.
+    analyzing feature edges ...
+        Data information
+            Meshing model
+                Attributes:
+                    'LengthUnit': '[mm]'
+                Entity summary:
+                    Component: 2
+                    Body     : 1
+                    Face     : 1
+                Tessellation summary:
+                    Face facets: 73
+                Bounding box:
+                    (43.56163024902344, 0.009902752935886383, 0.01038424670696259) x (44.71866226196289, 2.799324035644531, 2.977912425994873)
+                Assembly component hierarchy:
+                    'F:/POLITO/Innovations/progettp_innovations/pr_outlet.STL'
+                      'solid pr_outlet'
+    
+    
+    exporting FLTG data to file 'C:\\Users\\S308056\\AppData\\Local\\Temp\\out17180311646096.tgf' ...
+    writing face-based mesh file 'C:\\Users\\S308056\\AppData\\Local\\Temp\\out17180311646096.tgf' ...
+    ======== Exported Data ========
+    Entity summary:
+        Object       : 1
+        Zone         : 1
+    
+    running conversion done.
+    running ANSYS TGrid CADToTGridConverter done.
+    ran ANSYS TGrid CADToTGridConverter in 0.039 [s]
+Reading "C:\Users\S308056\AppData\Local\Temp/out17180311646096.tgf"...
+nodes: 75
+faces: 73
+cells: 0
+reading 75 storage data (id 1, type 41, double precision binary).
+appending mesh...
+	Zone id collision: 1 changed to 9.
+	Zone id collision: 2 changed to 10.
+done.
+generating pointers...done.
+extracting boundary entities...
+ 930 boundary nodes.
+ 1602 boundary faces.
+ 3 boundary face zones.
+done.
+analyzing boundary connectivity...done.
+(cx-gui-do cx-activate-item "Import CAD Geometry*Table1*Frame3*Frame2*PushButton2")
+(cx-gui-do cx-set-file-dialog-entries "Select File" '( "pr_prox_wall.STL") "All Files (*)")
+(cx-gui-do cx-activate-item "Import CAD Geometry*PanelButtons*PushButton3(Import)")
+
+Importing one geom object per file and one zone per face ...
+    v:\\ANSYS Inc\\v232\\commonfiles\\CPython\\3_10\\winx64\\Release\\python\\..\\Ansys\\TGrid\\CADReaders.py started by S308056 on Pcld338 winx64 on Mon Jun 10 16:52:53 2024
+    using Python 3.10.9 (remotes/origin/4e018266dafe29ec2836492d71d245fcfd366d07-dirty:4e018266, Jan  3 2) [MSC v.1920 64 bit (AMD64)]
+    
+    using Ansys.Meshing.FieldMesher build May 30 2023 15:18:26
+    
+    running ANSYS TGrid CADToTGridConverter ...
+    setting up parameters ...
+    setting up parameters done.
+    running conversion ...
+    converting 1 file(s) from Workbench to FLTG using output path 'C:\\Users\\S308056\\AppData\\Local\\Temp/out17180311726096.tgf'
+    converting file 'pr_prox_wall.STL' (1 of 1) from Workbench to FLTG using output path 'C:\\Users\\S308056\\AppData\\Local\\Temp'
+    importing data ...
+    importing meshing model in STL format from file 'F:/POLITO/Innovations/progettp_innovations/pr_prox_wall.STL' ...
+    solid 'solid pr_prox_wall'
+    number of facets: 1456
+    1456 facets imported ...
+    preparing model ...
+    processing data ...
+    removing named collections of entities ...
+    removing named collections of entities stopped, no named collections selected.
+    analyzing feature edges ...
+        Data information
+            Meshing model
+                Attributes:
+                    'LengthUnit': '[mm]'
+                Entity summary:
+                    Component: 2
+                    Body     : 1
+                    Face     : 1
+                Tessellation summary:
+                    Face facets: 1456
+                Bounding box:
+                    (24.65975952148438, 0.009902287274599075, 0.01038424670696259) x (44.71799087524414, 6.963721752166748, 4.489076614379883)
+                Assembly component hierarchy:
+                    'F:/POLITO/Innovations/progettp_innovations/pr_prox_wall.STL'
+                      'solid pr_prox_wall'
+    
+    
+    exporting FLTG data to file 'C:\\Users\\S308056\\AppData\\Local\\Temp\\out17180311726096.tgf' ...
+    writing face-based mesh file 'C:\\Users\\S308056\\AppData\\Local\\Temp\\out17180311726096.tgf' ...
+    ======== Exported Data ========
+    Entity summary:
+        Object       : 1
+        Zone         : 1
+    
+    running conversion done.
+    running ANSYS TGrid CADToTGridConverter done.
+    ran ANSYS TGrid CADToTGridConverter in 0.051 [s]
+Reading "C:\Users\S308056\AppData\Local\Temp/out17180311726096.tgf"...
+nodes: 780
+faces: 1456
+cells: 0
+reading 780 storage data (id 1, type 41, double precision binary).
+appending mesh...
+	Zone id collision: 1 changed to 13.
+	Zone id collision: 2 changed to 14.
+done.
+generating pointers...done.
+extracting boundary entities...
+ 1710 boundary nodes.
+ 3058 boundary faces.
+ 4 boundary face zones.
+done.
+analyzing boundary connectivity...done.
+(cx-gui-do cx-activate-item "Import CAD Geometry*Table1*Frame3*Frame2*PushButton2")
+(cx-gui-do cx-set-file-dialog-entries "Select File" '( "pr_stent.STL") "All Files (*)")
+(cx-gui-do cx-activate-item "Import CAD Geometry*PanelButtons*PushButton3(Import)")
+
+Importing one geom object per file and one zone per face ...
+    v:\\ANSYS Inc\\v232\\commonfiles\\CPython\\3_10\\winx64\\Release\\python\\..\\Ansys\\TGrid\\CADReaders.py started by S308056 on Pcld338 winx64 on Mon Jun 10 16:53:02 2024
+    using Python 3.10.9 (remotes/origin/4e018266dafe29ec2836492d71d245fcfd366d07-dirty:4e018266, Jan  3 2) [MSC v.1920 64 bit (AMD64)]
+    
+    using Ansys.Meshing.FieldMesher build May 30 2023 15:18:26
+    
+    running ANSYS TGrid CADToTGridConverter ...
+    setting up parameters ...
+    setting up parameters done.
+    running conversion ...
+    converting 1 file(s) from Workbench to FLTG using output path 'C:\\Users\\S308056\\AppData\\Local\\Temp/out17180311816096.tgf'
+    converting file 'pr_stent.STL' (1 of 1) from Workbench to FLTG using output path 'C:\\Users\\S308056\\AppData\\Local\\Temp'
+    importing data ...
+    importing meshing model in STL format from file 'F:/POLITO/Innovations/progettp_innovations/pr_stent.STL' ...
+    solid 'solid pr_stent'
+    number of facets: 15840
+    15840 facets imported ...
+    preparing model ...
+    processing data ...
+    removing named collections of entities ...
+    removing named collections of entities stopped, no named collections selected.
+    analyzing feature edges ...
+        Data information
+            Meshing model
+                Attributes:
+                    'LengthUnit': '[mm]'
+                Entity summary:
+                    Component: 2
+                    Body     : 1
+                    Face     : 1
+                Tessellation summary:
+                    Face facets: 15840
+                Bounding box:
+                    (20.25882720947266, 3.980301856994629, 1.496672868728638) x (24.47521018981934, 7.012845039367676, 4.508862018585205)
+                Assembly component hierarchy:
+                    'F:/POLITO/Innovations/progettp_innovations/pr_stent.STL'
+                      'solid pr_stent'
+    
+    
+    exporting FLTG data to file 'C:\\Users\\S308056\\AppData\\Local\\Temp\\out17180311816096.tgf' ...
+    writing face-based mesh file 'C:\\Users\\S308056\\AppData\\Local\\Temp\\out17180311816096.tgf' ...
+    ======== Exported Data ========
+    Entity summary:
+        Object       : 1
+        Zone         : 1
+    
+    running conversion done.
+    running ANSYS TGrid CADToTGridConverter done.
+    ran ANSYS TGrid CADToTGridConverter in 0.114 [s]
+Reading "C:\Users\S308056\AppData\Local\Temp/out17180311816096.tgf"...
+nodes: 7912
+faces: 15840
+cells: 0
+reading 7912 storage data (id 1, type 41, double precision binary).
+appending mesh...
+	Zone id collision: 1 changed to 17.
+	Zone id collision: 2 changed to 18.
+done.
+generating pointers...done.
+extracting boundary entities...
+ 9622 boundary nodes.
+ 18898 boundary faces.
+ 5 boundary face zones.
+done.
+analyzing boundary connectivity...done.
+(cx-gui-do cx-activate-item "Import CAD Geometry*Table1*Frame3*Frame2*PushButton2")
+(cx-gui-do cx-set-file-dialog-entries "Select File" '( "pr_stent_wall.STL") "All Files (*)")
+(cx-gui-do cx-activate-item "Import CAD Geometry*PanelButtons*PushButton3(Import)")
+
+Importing one geom object per file and one zone per face ...
+    v:\\ANSYS Inc\\v232\\commonfiles\\CPython\\3_10\\winx64\\Release\\python\\..\\Ansys\\TGrid\\CADReaders.py started by S308056 on Pcld338 winx64 on Mon Jun 10 16:53:14 2024
+    using Python 3.10.9 (remotes/origin/4e018266dafe29ec2836492d71d245fcfd366d07-dirty:4e018266, Jan  3 2) [MSC v.1920 64 bit (AMD64)]
+    
+    using Ansys.Meshing.FieldMesher build May 30 2023 15:18:26
+    
+    running ANSYS TGrid CADToTGridConverter ...
+    setting up parameters ...
+    setting up parameters done.
+    running conversion ...
+    converting 1 file(s) from Workbench to FLTG using output path 'C:\\Users\\S308056\\AppData\\Local\\Temp/out17180311936096.tgf'
+    converting file 'pr_stent_wall.STL' (1 of 1) from Workbench to FLTG using output path 'C:\\Users\\S308056\\AppData\\Local\\Temp'
+    importing data ...
+    importing meshing model in STL format from file 'F:/POLITO/Innovations/progettp_innovations/pr_stent_wall.STL' ...
+    solid 'solid pr_stent_wall'
+    number of facets: 4190
+    4190 facets imported ...
+    preparing model ...
+    processing data ...
+    removing named collections of entities ...
+    removing named collections of entities stopped, no named collections selected.
+    analyzing feature edges ...
+        Data information
+            Meshing model
+                Attributes:
+                    'LengthUnit': '[mm]'
+                Entity summary:
+                    Component: 2
+                    Body     : 1
+                    Face     : 1
+                Tessellation summary:
+                    Face facets: 4190
+                Bounding box:
+                    (19.95114326477051, 3.972075223922729, 1.49513041973114) x (24.78489112854004, 7.011698722839355, 4.50693941116333)
+                Assembly component hierarchy:
+                    'F:/POLITO/Innovations/progettp_innovations/pr_stent_wall.STL'
+                      'solid pr_stent_wall'
+    
+    
+    exporting FLTG data to file 'C:\\Users\\S308056\\AppData\\Local\\Temp\\out17180311936096.tgf' ...
+    writing face-based mesh file 'C:\\Users\\S308056\\AppData\\Local\\Temp\\out17180311936096.tgf' ...
+    ======== Exported Data ========
+    Entity summary:
+        Object       : 1
+        Zone         : 1
+    
+    running conversion done.
+    running ANSYS TGrid CADToTGridConverter done.
+    ran ANSYS TGrid CADToTGridConverter in 0.086 [s]
+Reading "C:\Users\S308056\AppData\Local\Temp/out17180311936096.tgf"...
+nodes: 3594
+faces: 4190
+cells: 0
+reading 3594 storage data (id 1, type 41, double precision binary).
+appending mesh...
+	Zone id collision: 1 changed to 21.
+	Zone id collision: 2 changed to 22.
+done.
+generating pointers...done.
+extracting boundary entities...
+ 13216 boundary nodes.
+ 23088 boundary faces.
+ 6 boundary face zones.
+done.
+analyzing boundary connectivity...done.
+(cx-gui-do cx-activate-item "Import CAD Geometry*PanelButtons*PushButton1(Close)")
+(cx-gui-do cx-activate-item "MenuBar*BoundaryMenu*Manage...")
+(cx-gui-do cx-set-toggle-button2 "Manage Face Zones*Frame1*ToggleBox1(Options)*Scale" #t)
+(cx-gui-do cx-activate-item "Manage Face Zones*Frame1*ToggleBox1(Options)*Scale")
+(cx-gui-do cx-set-real-entry-list "Manage Face Zones*Table2*Frame2(Scale Factors)*RealEntry1(X)" '( 0))
+(cx-gui-do cx-activate-item "Manage Face Zones*PanelButtons*PushButton2(Close)")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Mesh Generation|Model|Geometry Objects|pr_stent_wall.stl""Mesh Generation|Model|Geometry Objects|pr_stent.stl""Mesh Generation|Model|Geometry Objects|pr_prox_wall.stl""Mesh Generation|Model|Geometry Objects|pr_outlet.stl""Mesh Generation|Model|Geometry Objects|pr_intel.stl""Mesh Generation|Model|Geometry Objects|pr_dist_wall.stl""Mesh Generation""Mesh Generation|Model""Mesh Generation|Model|CAD Assemblies""Mesh Generation|Model|Geometry Objects"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Mesh Generation|Model|Geometry Objects|pr_prox_wall.stl"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Mesh Generation|Model|Geometry Objects|pr_stent_wall.stl"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Mesh Generation|Model|Geometry Objects|pr_stent_wall.stl""Mesh Generation|Model|Geometry Objects|pr_stent.stl""Mesh Generation|Model|Geometry Objects|pr_prox_wall.stl""Mesh Generation|Model|Geometry Objects|pr_outlet.stl""Mesh Generation|Model|Geometry Objects|pr_intel.stl""Mesh Generation|Model|Geometry Objects|pr_dist_wall.stl"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Mesh Generation|Model|Geometry Objects|pr_stent_wall.stl""Mesh Generation|Model|Geometry Objects|pr_stent.stl""Mesh Generation|Model|Geometry Objects|pr_prox_wall.stl""Mesh Generation|Model|Geometry Objects|pr_outlet.stl""Mesh Generation|Model|Geometry Objects|pr_intel.stl""Mesh Generation|Model|Geometry Objects|pr_dist_wall.stl"))
+(cx-gui-do cx-list-tree-right-click "NavigationPane*Frame2*Table1*List_Tree2" )
+(cx-gui-do cx-activate-item "MenuBar*Draw OptionsSubMenu*Add")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list ))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Mesh Generation|Model|Geometry Objects|pr_stent_wall.stl"))
+(cx-use-window-id 51)
+zone not found.
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list ))
+(cx-gui-do cx-activate-item "MenuBar*BoundaryMenu*Manage...")
+(cx-gui-do cx-set-real-entry-list "Manage Face Zones*Table2*Frame2(Scale Factors)*RealEntry1(X)" '( 0.36))
+(cx-gui-do cx-set-real-entry-list "Manage Face Zones*Table2*Frame2(Scale Factors)*RealEntry2(Y)" '( 0.36))
+(cx-gui-do cx-set-real-entry-list "Manage Face Zones*Table2*Frame2(Scale Factors)*RealEntry3(Z)" '( 0.36))
+(cx-gui-do cx-set-list-selections "Manage Face Zones*Frame3*List1(Face Zones)" '( 0))
+(cx-gui-do cx-activate-item "Manage Face Zones*Frame3*List1(Face Zones)")
+(cx-gui-do cx-set-list-selections "Manage Face Zones*Frame3*List1(Face Zones)" '( 0 1 2 3 4 5))
+(cx-gui-do cx-activate-item "Manage Face Zones*Frame3*List1(Face Zones)")
+(cx-gui-do cx-activate-item "Manage Face Zones*Frame3*List2(Face Zone Groups)")
+(cx-gui-do cx-set-list-selections "Manage Face Zones*Frame3*List2(Face Zone Groups)" '( 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16))
+(cx-gui-do cx-activate-item "Manage Face Zones*Frame3*List2(Face Zone Groups)")
+(cx-gui-do cx-activate-item "Manage Face Zones*PanelButtons*PushButton1(Apply)")
+
+Warning: Curvature data for any of the zones will not be scaled. 
+
+Scaled zones (2 6 10 14 18 22) with factors (0.36 0.36 0.36).(cx-gui-do cx-set-toggle-button2 "Manage Face Zones*Frame1*ToggleBox1(Options)*Change Type" #t)
+(cx-gui-do cx-activate-item "Manage Face Zones*Frame1*ToggleBox1(Options)*Change Type")
+(cx-gui-do cx-activate-item "Manage Face Zones*Frame3*List2(Face Zone Groups)")
+(cx-gui-do cx-set-list-selections "Manage Face Zones*Frame3*List2(Face Zone Groups)" '())
+(cx-gui-do cx-activate-item "Manage Face Zones*Frame3*List2(Face Zone Groups)")
+(cx-gui-do cx-set-list-selections "Manage Face Zones*Frame3*List1(Face Zones)" '( 1))
+(cx-gui-do cx-activate-item "Manage Face Zones*Frame3*List1(Face Zones)")
+(cx-gui-do cx-set-list-selections "Manage Face Zones*Table2*Frame1*DropDownList1(Type)" '( 9))
+(cx-gui-do cx-activate-item "Manage Face Zones*Table2*Frame1*DropDownList1(Type)")
+(cx-gui-do cx-activate-item "Manage Face Zones*PanelButtons*PushButton1(Apply)")
+(cx-gui-do cx-set-list-selections "Manage Face Zones*Frame3*List1(Face Zones)" '( 1 2))
+(cx-gui-do cx-activate-item "Manage Face Zones*Frame3*List1(Face Zones)")
+(cx-gui-do cx-set-list-selections "Manage Face Zones*Table2*Frame1*DropDownList1(Type)" '( 18))
+(cx-gui-do cx-activate-item "Manage Face Zones*Table2*Frame1*DropDownList1(Type)")
+(cx-gui-do cx-activate-item "Manage Face Zones*PanelButtons*PushButton1(Apply)")
+(cx-gui-do cx-set-list-selections "Manage Face Zones*Frame3*List1(Face Zones)" '( 2))
+(cx-gui-do cx-activate-item "Manage Face Zones*Frame3*List1(Face Zones)")
+(cx-gui-do cx-set-list-selections "Manage Face Zones*Frame3*List1(Face Zones)" '())
+(cx-gui-do cx-activate-item "Manage Face Zones*Frame3*List1(Face Zones)")
+(cx-gui-do cx-set-list-selections "Manage Face Zones*Frame3*List1(Face Zones)" '( 1))
+(cx-gui-do cx-activate-item "Manage Face Zones*Frame3*List1(Face Zones)")
+(cx-gui-do cx-set-list-selections "Manage Face Zones*Table2*Frame1*DropDownList1(Type)" '( 9))
+(cx-gui-do cx-activate-item "Manage Face Zones*Table2*Frame1*DropDownList1(Type)")
+(cx-gui-do cx-activate-item "Manage Face Zones*PanelButtons*PushButton1(Apply)")
+(cx-gui-do cx-set-list-selections "Manage Face Zones*Frame3*List1(Face Zones)" '())
+(cx-gui-do cx-activate-item "Manage Face Zones*Frame3*List1(Face Zones)")
+(cx-gui-do cx-set-list-selections "Manage Face Zones*Frame3*List1(Face Zones)" '( 0))
+(cx-gui-do cx-activate-item "Manage Face Zones*Frame3*List1(Face Zones)")
+(cx-gui-do cx-set-list-selections "Manage Face Zones*Frame3*List1(Face Zones)" '( 0 1 2 3))
+(cx-gui-do cx-activate-item "Manage Face Zones*Frame3*List1(Face Zones)")
+(cx-gui-do cx-set-list-selections "Manage Face Zones*Frame3*List1(Face Zones)" '( 0 1 3))
+(cx-gui-do cx-activate-item "Manage Face Zones*Frame3*List1(Face Zones)")
+(cx-gui-do cx-set-list-selections "Manage Face Zones*Frame3*List1(Face Zones)" '( 0 3))
+(cx-gui-do cx-activate-item "Manage Face Zones*Frame3*List1(Face Zones)")
+(cx-gui-do cx-set-list-selections "Manage Face Zones*Frame3*List1(Face Zones)" '( 0 3 5))
+(cx-gui-do cx-activate-item "Manage Face Zones*Frame3*List1(Face Zones)")
+(cx-gui-do cx-set-list-selections "Manage Face Zones*Frame3*List1(Face Zones)" '( 0 3 4 5))
+(cx-gui-do cx-activate-item "Manage Face Zones*Frame3*List1(Face Zones)")
+(cx-gui-do cx-set-list-selections "Manage Face Zones*Table2*Frame1*DropDownList1(Type)" '( 22))
+(cx-gui-do cx-activate-item "Manage Face Zones*Table2*Frame1*DropDownList1(Type)")
+(cx-gui-do cx-activate-item "Manage Face Zones*PanelButtons*PushButton1(Apply)")
+(cx-gui-do cx-set-list-selections "Manage Face Zones*Frame3*List1(Face Zones)" '( 0 1 3 4 5))
+(cx-gui-do cx-activate-item "Manage Face Zones*Frame3*List1(Face Zones)")
+(cx-gui-do cx-set-list-selections "Manage Face Zones*Frame3*List1(Face Zones)" '( 0 1 2 3 4 5))
+(cx-gui-do cx-activate-item "Manage Face Zones*Frame3*List1(Face Zones)")
+(cx-gui-do cx-activate-item "Manage Face Zones*PanelButtons*PushButton4(List)")
+
+      id                            name                 type    count      tri     quad
+  ______   _____________________________   __________________   ______   ______   ______
+       2              solid-pr_dist_wall                 wall     1456     1456        0
+       6                  solid-pr_intel      mass-flow-inlet       73       73        0
+      10                 solid-pr_outlet      pressure-outlet       73       73        0
+      14              solid-pr_prox_wall                 wall     1456     1456        0
+      18                  solid-pr_stent                 wall    15840    15840        0
+      22             solid-pr_stent_wall                 wall     4190     4190        0
+(cx-gui-do cx-activate-item "Manage Face Zones*PanelButtons*PushButton2(Close)")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Mesh Generation|Model|Geometry Objects|pr_stent_wall.stl"))
+(cx-gui-do cx-list-tree-right-click "NavigationPane*Frame2*Table1*List_Tree2" )
+(cx-gui-do cx-activate-item "MenuBar*PopupMenuTree-m-Geometry Objects*Rename/Change Properties...")
+(cx-gui-do cx-set-text-entry "Change Object Properties*TextEntry1(New Object Prefix)" "pr_stent_wall")
+(cx-gui-do cx-activate-item "Change Object Properties*PanelButtons*PushButton1(OK)")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Mesh Generation|Model|Geometry Objects|pr_dist_wall.stl"))
+(cx-gui-do cx-list-tree-right-click "NavigationPane*Frame2*Table1*List_Tree2" )
+(cx-gui-do cx-activate-item "MenuBar*PopupMenuTree-m-Geometry Objects*Rename/Change Properties...")
+(cx-gui-do cx-set-text-entry "Change Object Properties*TextEntry1(New Object Prefix)" "pr_dist_wall")
+(cx-gui-do cx-activate-item "Change Object Properties*PanelButtons*PushButton1(OK)")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Mesh Generation|Model|Geometry Objects|pr_intel.stl"))
+(cx-gui-do cx-list-tree-right-click "NavigationPane*Frame2*Table1*List_Tree2" )
+(cx-gui-do cx-activate-item "MenuBar*PopupMenuTree-m-Geometry Objects*Rename/Change Properties...")
+(cx-gui-do cx-set-text-entry "Change Object Properties*TextEntry1(New Object Prefix)" "pr_intel")
+(cx-gui-do cx-activate-item "Change Object Properties*PanelButtons*PushButton1(OK)")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Mesh Generation|Model|Geometry Objects|pr_outlet.stl"))
+(cx-gui-do cx-list-tree-right-click "NavigationPane*Frame2*Table1*List_Tree2" )
+(cx-gui-do cx-activate-item "MenuBar*PopupMenuTree-m-Geometry Objects*Rename/Change Properties...")
+(cx-gui-do cx-set-text-entry "Change Object Properties*TextEntry1(New Object Prefix)" "pr_outlet")
+(cx-gui-do cx-activate-item "Change Object Properties*PanelButtons*PushButton1(OK)")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Mesh Generation|Model|Geometry Objects|pr_prox_wall.stl"))
+(cx-gui-do cx-list-tree-right-click "NavigationPane*Frame2*Table1*List_Tree2" )
+(cx-gui-do cx-activate-item "MenuBar*PopupMenuTree-m-Geometry Objects*Rename/Change Properties...")
+(cx-gui-do cx-set-text-entry "Change Object Properties*TextEntry1(New Object Prefix)" "pr_prox_wall")
+(cx-gui-do cx-activate-item "Change Object Properties*PanelButtons*PushButton1(OK)")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Mesh Generation|Model|Geometry Objects|pr_stent.stl"))
+(cx-gui-do cx-list-tree-right-click "NavigationPane*Frame2*Table1*List_Tree2" )
+(cx-gui-do cx-activate-item "MenuBar*PopupMenuTree-m-Geometry Objects*Rename/Change Properties...")
+(cx-gui-do cx-set-text-entry "Change Object Properties*TextEntry1(New Object Prefix)" "pr_stent")
+(cx-gui-do cx-activate-item "Change Object Properties*PanelButtons*PushButton1(OK)")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list ))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Mesh Generation|Model"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Mesh Generation|Model"))
+(cx-gui-do cx-list-tree-right-click "NavigationPane*Frame2*Table1*List_Tree2" )
+(cx-gui-do cx-activate-item "MenuBar*PopupMenuTree-m-Construction Geometry*Material Points...")
+(cx-gui-do cx-activate-item "Material Points*PanelButtons*PushButton3(Create)")
+(cx-gui-do cx-activate-item "Material Points*PanelButtons*PushButton3(Create)")
+(cx-use-window-id 51)
+selected 6 zone(s).
+zone id: 6, name: solid-pr_intel, type: mass-flow-inlet, count: 73
+zone id: 10, name: solid-pr_outlet, type: pressure-outlet, count: 73
+zone id: 2, name: solid-pr_dist_wall, type: wall, count: 1456
+zone id: 14, name: solid-pr_prox_wall, type: wall, count: 1456
+zone id: 22, name: solid-pr_stent_wall, type: wall, count: 4190
+zone id: 18, name: solid-pr_stent, type: wall, count: 15840
+(cx-gui-do cx-activate-item "Create Material Point*Table1*PushButton5(Compute)")
+(cx-gui-do cx-set-text-entry "Create Material Point*Table1*TextEntry1(Name)" "blood")
+(cx-gui-do cx-set-toggle-button2 "Create Material Point*Table1*CheckButton6(Preview)" #t)
+(cx-gui-do cx-activate-item "Create Material Point*Table1*CheckButton6(Preview)")
+(cx-gui-do cx-set-toggle-button2 "Create Material Point*Table1*CheckButton6(Preview)" #f)
+(cx-gui-do cx-activate-item "Create Material Point*Table1*CheckButton6(Preview)")
+(cx-gui-do cx-activate-item "Create Material Point*PanelButtons*PushButton3(Create)")
+(cx-gui-do cx-activate-item "Material Points*PanelButtons*PushButton3(Create)")
+(cx-gui-do cx-activate-item "Create Material Point*PanelButtons*PushButton1(Close)")
+(cx-gui-do cx-set-list-selections "Material Points*Frame1*List1(Material Points)" '( 0))
+(cx-gui-do cx-activate-item "Material Points*Frame1*List1(Material Points)")
+(cx-gui-do cx-activate-item "Material Points*PanelButtons*PushButton4(List)")
+
+name	 coordinates
+------------------------------------------------
+blood	(8.052413	1.246297	0.809497)(cx-gui-do cx-activate-item "Material Points*PanelButtons*PushButton1(Close)")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Mesh Generation|Model"))
+(cx-gui-do cx-list-tree-right-click "NavigationPane*Frame2*Table1*List_Tree2" )
+(cx-gui-do cx-activate-item "MenuBar*SizingSubMenu*Scoped...")
+(cx-gui-do cx-set-real-entry-list "Scoped Sizing*Table1*Table2(Global Scoped Sizing)*RealEntry1(Min)" '( 0.003))
+(cx-gui-do cx-set-real-entry-list "Scoped Sizing*Table1*Table2(Global Scoped Sizing)*RealEntry2(Max)" '( 0.08))
+(cx-gui-do cx-set-text-entry "Scoped Sizing*Table1*Table3(Local Scoped Sizing)*TextEntry1(Name)" "curv_stent")
+(cx-gui-do cx-set-real-entry-list "Scoped Sizing*Table1*Table3(Local Scoped Sizing)*RealEntry3(Min)" '( 0.003))
+(cx-gui-do cx-set-real-entry-list "Scoped Sizing*Table1*Table3(Local Scoped Sizing)*RealEntry4(Max)" '( 0.08))
+(cx-gui-do cx-activate-item "Scoped Sizing*Table1*Table3(Local Scoped Sizing)*Table10(Scope)*PushButton4")
+(cx-gui-do cx-set-list-selections "Scope*Frame1*List1(Objects)" '( 0 1 2 3 5))
+(cx-gui-do cx-activate-item "Scope*Frame1*List1(Objects)")
+(cx-gui-do cx-activate-item "Scope*Frame1*List1(Objects)")
+(cx-gui-do cx-set-list-selections "Scope*Frame1*List1(Objects)" '())
+(cx-gui-do cx-activate-item "Scope*Frame1*List1(Objects)")
+(cx-gui-do cx-set-list-selections "Scope*Frame1*List1(Objects)" '( 5))
+(cx-gui-do cx-activate-item "Scope*Frame1*List1(Objects)")
+(cx-gui-do cx-set-list-selections "Scope*Frame1*List1(Objects)" '( 4 5))
+(cx-gui-do cx-activate-item "Scope*Frame1*List1(Objects)")
+(cx-gui-do cx-activate-item "Scope*PanelButtons*PushButton1(OK)")
+(cx-gui-do cx-activate-item "Scoped Sizing*Table1*Table3(Local Scoped Sizing)*PushButton11(Create)")
+(cx-gui-do cx-set-text-entry "Scoped Sizing*Table1*Table3(Local Scoped Sizing)*TextEntry1(Name)" "curv_nonstent")
+(cx-gui-do cx-set-real-entry-list "Scoped Sizing*Table1*Table3(Local Scoped Sizing)*RealEntry3(Min)" '( 0.001))
+(cx-gui-do cx-set-real-entry-list "Scoped Sizing*Table1*Table3(Local Scoped Sizing)*RealEntry6(Normal Angle)" '( 25))
+(cx-gui-do cx-activate-item "Scoped Sizing*Table1*Table3(Local Scoped Sizing)*Table10(Scope)*PushButton4")
+(cx-gui-do cx-set-list-selections "Scope*Frame1*List1(Objects)" '( 5))
+(cx-gui-do cx-activate-item "Scope*Frame1*List1(Objects)")
+(cx-gui-do cx-set-list-selections "Scope*Frame1*List1(Objects)" '())
+(cx-gui-do cx-activate-item "Scope*Frame1*List1(Objects)")
+(cx-gui-do cx-set-list-selections "Scope*Frame1*List1(Objects)" '( 3))
+(cx-gui-do cx-activate-item "Scope*Frame1*List1(Objects)")
+(cx-gui-do cx-set-list-selections "Scope*Frame1*List1(Objects)" '( 2 3))
+(cx-gui-do cx-activate-item "Scope*Frame1*List1(Objects)")
+(cx-gui-do cx-set-list-selections "Scope*Frame1*List1(Objects)" '( 1 2 3))
+(cx-gui-do cx-activate-item "Scope*Frame1*List1(Objects)")
+(cx-gui-do cx-set-list-selections "Scope*Frame1*List1(Objects)" '( 0 1 2 3))
+(cx-gui-do cx-activate-item "Scope*Frame1*List1(Objects)")
+(cx-gui-do cx-activate-item "Scope*PanelButtons*PushButton1(OK)")
+(cx-gui-do cx-activate-item "Scoped Sizing*Table1*Table3(Local Scoped Sizing)*PushButton11(Create)")
+(cx-gui-do cx-activate-item "Question*Cancel")
+(cx-gui-do cx-set-list-selections "Scoped Sizing*Table1*List1(Scoped Sizing List)" '( 0))
+(cx-gui-do cx-activate-item "Scoped Sizing*Table1*List1(Scoped Sizing List)")
+(cx-gui-do cx-set-real-entry-list "Scoped Sizing*Table1*Table3(Local Scoped Sizing)*RealEntry3(Min)" '( 0.01))
+(cx-gui-do cx-activate-item "Scoped Sizing*Table1*Table3(Local Scoped Sizing)*PushButton12(Modify)")
+
+Modified curv_nonstent.(cx-gui-do cx-set-list-selections "Scoped Sizing*Table1*List1(Scoped Sizing List)" '( 0 1))
+(cx-gui-do cx-activate-item "Scoped Sizing*Table1*List1(Scoped Sizing List)")
+(cx-gui-do cx-set-list-selections "Scoped Sizing*Table1*List1(Scoped Sizing List)" '( 1))
+(cx-gui-do cx-activate-item "Scoped Sizing*Table1*List1(Scoped Sizing List)")
+(cx-gui-do cx-set-list-selections "Scoped Sizing*Table1*List1(Scoped Sizing List)" '( 0 1))
+(cx-gui-do cx-activate-item "Scoped Sizing*Table1*List1(Scoped Sizing List)")
+(cx-gui-do cx-set-list-selections "Scoped Sizing*Table1*List1(Scoped Sizing List)" '( 0))
+(cx-gui-do cx-activate-item "Scoped Sizing*Table1*List1(Scoped Sizing List)")
+(cx-gui-do cx-set-list-selections "Scoped Sizing*Table1*List1(Scoped Sizing List)" '( 0 1))
+(cx-gui-do cx-activate-item "Scoped Sizing*Table1*List1(Scoped Sizing List)")
+(cx-gui-do cx-activate-item "Scoped Sizing*Table1*Table4*PushButton2(List)")
+
+-------------------- ----------- ------- ------- ------------- ----------------- --------------- -----------
+                Name        Type     Min     Max   Growth-Rate   Curvature-Angle   Cells-Per-Gap       Scope
+-------------------- ----------- ------- ------- ------------- ----------------- --------------- -----------
+          curv_stent   curvature   0.003    0.08           1.2                18             N.A pr_stent pr_stent_wall 
+       curv_nonstent   curvature    0.01    0.08           1.2                25             N.A pr_dist_wall pr_intel pr_outlet pr_prox_wall 
+(cx-gui-do cx-activate-item "Scoped Sizing*PanelButtons*PushButton3(Compute)")
+    processing size functions/scoped sizing to create Size Field...
+
+Processed Curvature size function in 0.422000 seconds 
+
+Processed Curvature size function in 0.042000 seconds 
+Done.
+(cx-gui-do cx-activate-item "Scoped Sizing*PanelButtons*PushButton1(Close)")
+(cx-use-window-id 51)
+zone not found.
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list ))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Mesh Generation|Model|Geometry Objects|pr_dist_wall"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Mesh Generation|Model|Geometry Objects|pr_dist_wall""Mesh Generation|Model|Geometry Objects|pr_intel""Mesh Generation|Model|Geometry Objects|pr_outlet""Mesh Generation|Model|Geometry Objects|pr_prox_wall""Mesh Generation|Model|Geometry Objects|pr_stent""Mesh Generation|Model|Geometry Objects|pr_stent_wall"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Mesh Generation|Model|Geometry Objects|pr_dist_wall""Mesh Generation|Model|Geometry Objects|pr_intel""Mesh Generation|Model|Geometry Objects|pr_outlet""Mesh Generation|Model|Geometry Objects|pr_prox_wall""Mesh Generation|Model|Geometry Objects|pr_stent""Mesh Generation|Model|Geometry Objects|pr_stent_wall"))
+(cx-gui-do cx-list-tree-right-click "NavigationPane*Frame2*Table1*List_Tree2" )
+(cx-gui-do cx-activate-item "MenuBar*WrapSubMenu*Extract Edges...")
+(cx-gui-do cx-set-list-selections "Extract Edges*Frame1*DropDownList2(Option)" '( 0))
+(cx-gui-do cx-activate-item "Extract Edges*Frame1*DropDownList2(Option)")
+(cx-gui-do cx-activate-item "Extract Edges*PanelButtons*PushButton1(OK)")
+Old associated edges are replaced by new ones
+Extracted 1 exterior edges and 0 interior edges.
+Extracted 1 exterior edges and 0 interior edges.
+Extracted 1 exterior edges and 0 interior edges.
+Extracted 1 exterior edges and 0 interior edges.
+Extracted 0 exterior edges and 1 interior edges.
+Extracted 1 exterior edges and 1 interior edges.
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list ))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Mesh Generation|Model|Geometry Objects|pr_dist_wall"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Mesh Generation|Model|Geometry Objects|pr_dist_wall""Mesh Generation|Model|Geometry Objects|pr_intel""Mesh Generation|Model|Geometry Objects|pr_outlet""Mesh Generation|Model|Geometry Objects|pr_prox_wall""Mesh Generation|Model|Geometry Objects|pr_stent""Mesh Generation|Model|Geometry Objects|pr_stent_wall"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Mesh Generation|Model|Geometry Objects|pr_dist_wall""Mesh Generation|Model|Geometry Objects|pr_intel""Mesh Generation|Model|Geometry Objects|pr_outlet""Mesh Generation|Model|Geometry Objects|pr_prox_wall""Mesh Generation|Model|Geometry Objects|pr_stent""Mesh Generation|Model|Geometry Objects|pr_stent_wall"))
+(cx-gui-do cx-list-tree-right-click "NavigationPane*Frame2*Table1*List_Tree2" )
+(cx-gui-do cx-activate-item "MenuBar*Create Intersection LoopsSubMenu*Collectively")
+
+create intersection loop for solid-pr_intel and solid-pr_dist_wall ...
+created loop intersect-6-2-39.Done
+create intersection loop for solid-pr_prox_wall and solid-pr_outlet ...
+created loop intersect-14-10-41.Done
+create intersection loop for solid-pr_stent_wall and solid-pr_prox_wall ...
+created loop intersect-22-14-43.Done
+create intersection loop for solid-pr_stent_wall and solid-pr_dist_wall ...
+created loop intersect-22-2-45.Done
+create intersection loop for solid-pr_stent_wall and solid-pr_stent ...
+created loop intersect-22-18-47.DoneZone intersect-6-2-39 is copied to make objects independent
+copying edges from intersect-6-2-39 to intersect-6-2-39:49
+Zone intersect-14-10-41 is copied to make objects independent
+copying edges from intersect-14-10-41 to intersect-14-10-41:51
+Zone intersect-22-18-47 is copied to make objects independent
+Zone intersect-22-2-45 is copied to make objects independent
+Zone intersect-22-14-43 is copied to make objects independent
+copying edges from intersect-22-14-43 to intersect-22-14-43:53
+copying edges from intersect-22-2-45 to intersect-22-2-45:54
+copying edges from intersect-22-18-47 to intersect-22-18-47:55
+(cx-gui-do cx-activate-item "MenuBar*DisplayMenu*Grid...")
+(cx-gui-do cx-activate-tab-index "Display Grid*Frame1" 0)
+(cx-gui-do cx-activate-tab-index "Display Grid*Frame1" 1)
+(cx-gui-do cx-activate-tab-index "Display Grid*Frame1" 0)
+(cx-gui-do cx-activate-tab-index "Display Grid*Frame1" 2)
+(cx-gui-do cx-activate-tab-index "Display Grid*Frame1" 0)
+(cx-gui-do cx-activate-tab-index "Display Grid*Frame1" 3)
+(cx-gui-do cx-activate-tab-index "Display Grid*Frame1" 0)
+(cx-gui-do cx-activate-tab-index "Display Grid*Frame1" 4)
+(cx-gui-do cx-activate-tab-index "Display Grid*Frame1" 0)
+(cx-gui-do cx-activate-tab-index "Display Grid*Frame1" 5)
+(cx-gui-do cx-activate-tab-index "Display Grid*Frame1" 0)
+(cx-gui-do cx-activate-tab-index "Display Grid*Frame1" 2)
+(cx-gui-do cx-activate-tab-index "Display Grid*Frame1" 1)
+(cx-gui-do cx-activate-item "Display Grid*Frame1*Frame2(Edges)*Frame2*List1(Edge Zones)")
+(cx-gui-do cx-set-list-selections "Display Grid*Frame1*Frame2(Edges)*Frame2*List1(Edge Zones)" '( 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16))
+(cx-gui-do cx-activate-item "Display Grid*Frame1*Frame2(Edges)*Frame2*List1(Edge Zones)")
+(cx-gui-do cx-activate-item "Display Grid*PanelButtons*PushButton1(OK)")
+(cx-gui-do cx-activate-item "Display Grid*PanelButtons*PushButton2(Cancel)")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Mesh Generation|Model|Geometry Objects|pr_dist_wall""Mesh Generation|Model|Geometry Objects|pr_intel""Mesh Generation|Model|Geometry Objects|pr_outlet""Mesh Generation|Model|Geometry Objects|pr_prox_wall""Mesh Generation|Model|Geometry Objects|pr_stent""Mesh Generation|Model|Geometry Objects|pr_stent_wall"))
+(cx-gui-do cx-list-tree-right-click "NavigationPane*Frame2*Table1*List_Tree2" )
+(cx-gui-do cx-activate-item "MenuBar*WrapSubMenu*Shrink Wrap...")
+(cx-gui-do cx-set-text-entry "Wrap*Frame1*Frame1*Frame2*TextEntry1(New Object Name)" "surf")
+(cx-gui-do cx-set-list-selections "Wrap*Frame1*Frame1*Frame3(Material Point)*DropDownList1" '( 1))
+(cx-gui-do cx-activate-item "Wrap*Frame1*Frame1*Frame3(Material Point)*DropDownList1")
+(cx-gui-do cx-activate-item "Wrap*PanelButtons*PushButton1(OK)")
+    initializing octree...
+    refining octree...
+
+    creating new fluid object...
+    projecting...
+    initial partitioning of wrapper surface...
+    rezoning...
+    improving high level surfaces...
+        imprinting features...
+        smoothing...
+    remeshing surfaces...
+    completing remeshing...
+    post wrap processing...
+    done.
+done.
+(cx-gui-do cx-activate-item "MenuBar*MeshMenu*Check")
+
+Domain extents.
+  x-coordinate: min = 6.228760e-03, max = 1.609872e+01.
+  y-coordinate: min = 3.478825e-03, max = 2.524624e+00.
+  z-coordinate: min = 3.738329e-03, max = 1.623190e+00.
+Volume statistics.
+Face area statistics.
+   minimum face area: 1.898463e-09.
+   maximum face area: 2.496910e-02.
+   average face area: 1.342167e-03.
+Checking number of nodes per edge.
+Checking number of nodes per face.
+Checking number of nodes per cell.
+Checking number of faces/neighbors per cell.
+Checking cell faces/neighbors.
+Checking isolated cells.
+Checking face handedness.
+Checking periodic face pairs.
+Checking face children.
+Checking face zone boundary conditions.
+Checking for invalid node coordinates.
+Checking poly cells.
+Checking zones.
+Checking neighborhood.
+Checking interfaces.
+Checking modified centroid.
+Done.(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Mesh Generation|Model|Mesh Objects"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Mesh Generation|Model|Mesh Objects"))
+(cx-gui-do cx-list-tree-right-click "NavigationPane*Frame2*Table1*List_Tree2" )
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Mesh Generation|Model|Mesh Objects|surf"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Mesh Generation|Model|Mesh Objects|surf"))
+(cx-gui-do cx-list-tree-right-click "NavigationPane*Frame2*Table1*List_Tree2" )
+(cx-gui-do cx-activate-item "MenuBar*PopupMenuTree-m-Mesh Objects*Draw")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Mesh Generation|Model|Mesh Objects|surf"))
+(cx-gui-do cx-list-tree-right-click "NavigationPane*Frame2*Table1*List_Tree2" )
+(cx-use-window-id 51)
+zone not found.
+(cx-gui-do cx-set-toggle-button2 "Ribbon*Frame1*Frame2(Task Page)*Table1*Table3(Display)*CheckButton4(Face Edges)" #t)
+(cx-gui-do cx-activate-item "Ribbon*Frame1*Frame2(Task Page)*Table1*Table3(Display)*CheckButton4(Face Edges)")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Mesh Generation|Model|Mesh Objects|surf|Volumetric Regions"))
+(cx-gui-do cx-list-tree-right-click "NavigationPane*Frame2*Table1*List_Tree2" )
+(cx-gui-do cx-activate-item "MenuBar*PopupMenuTree-m-Mesh Region Parent*Compute...")
+(cx-gui-do cx-set-list-selections "Compute Regions*Frame1*List1(Material Points)" '( 0))
+(cx-gui-do cx-activate-item "Compute Regions*Frame1*List1(Material Points)")
+(cx-gui-do cx-activate-item "Compute Regions*PanelButtons*PushButton1(OK)")
+
+    computing regions...
+    warning: material point blood ignored because face zone label with same name exists.
+done
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Mesh Generation|Model|Mesh Objects|surf|Cell Zones"))
+(cx-gui-do cx-list-tree-right-click "NavigationPane*Frame2*Table1*List_Tree2" )
+(cx-gui-do cx-activate-item "MenuBar*PopupMenuTree-m-Cell Zones Parent*Auto Mesh...")
+(cx-gui-do cx-set-toggle-button2 "Auto Mesh*Table4*Table1(Volume Fill)*ToggleBox1*Poly" #t)
+(cx-gui-do cx-activate-item "Auto Mesh*Table4*Table1(Volume Fill)*ToggleBox1*Poly")
+(cx-gui-do cx-set-real-entry-list "Auto Mesh*Table4*Table2(Volume Fill Options)*Table5*RealEntry1(Max Cell Length)" '( 0.08))
+(cx-gui-do cx-activate-item "Auto Mesh*Table4*Table2(Volume Fill Options)*Table5*RealEntry1(Max Cell Length)")
+(cx-gui-do cx-set-toggle-button2 "Auto Mesh*Frame5(Options)*CheckButton1(Merge Cell Zones)" #t)
+(cx-gui-do cx-activate-item "Auto Mesh*Frame5(Options)*CheckButton1(Merge Cell Zones)")
+(cx-gui-do cx-set-toggle-button2 "Auto Mesh*Frame5(Options)*CheckButton3(Auto Partition (Parallel Meshing))" #f)
+(cx-gui-do cx-activate-item "Auto Mesh*Frame5(Options)*CheckButton3(Auto Partition (Parallel Meshing))")
+(cx-gui-do cx-activate-item "Auto Mesh*PanelButtons*PushButton4(Apply)")
+(cx-gui-do cx-activate-item "Auto Mesh*PanelButtons*PushButton3(Mesh)")
+
+creating backup for object "surf"...done.
+
+checking object "surf"...
+    skipping validating regions of mesh object "surf"...done.
+auto meshing object surf...
+
+merged 0 free nodes, 0 faces, tolerance 5.7389016e-07.
+Deleting unused nodes globally...
+removed 7536 nodes.
+deleted 7536 unused nodes.
+initializing mesh...
+         Number of Cells        Nodes Not Meshed               Nodes/Sec
+              205579                       0                    32017
+mesh initialized.
+generating regions ... 1 regions.
+done.
+
+associating cell zones with regions...
+delete dead zones.
+done.
+
+
+
+refine 1 cell zones (blood)
+node generation (serial)
+         Number of Cells         Number of Nodes               Nodes/Sec
+              583143                   77568                    38784
+              771829                  107238                    29670
+.
+
+
+
+size field is deleted.
+
+done.
+
+
+first stage improve.
+moved 63181 nodes, rms 0.00504242
+moved 44255 nodes, rms 0.0019652
+moved 34395 nodes, rms 0.000900054
+
+
+iteration 1, moved 37551 nodes, rms 2.69272e-06 max move 0.000109835.
+
+
+second stage improve.
+
+
+
+
+
+
+
+
+Changing quality measure to internal-default.
+create polyhedra
+
+insert layer tets
+total concave edges 1383
+inserted 6361 tet cells
+
+improve 14 tet cells
+
+
+
+creating dual vertices and smoothing ... done.
+tessellate around concave edges ... done.
+8746 poly boundary faces created.
+tessellate boundary ... done.
+27921 poly boundary faces created.
+tessellate bulk cell zones ... done.
+generating dual cells ... done.
+0 prism poly cells created.
+150308 poly cells created.
+
+merging short edges ... 7569 merged.
+improve...
+
+merging short edges and faces ...
+	merged 19056 short edges.
+	merged 30568 small area faces.
+	removed 555 valence-2 interior nodes.
+	modified 0 cells connectivity.
+	removed 0 flat cell.
+done.
+
+smooth-improve poly cells
+90 cells above quality 0.980000 with worst quality 1.791714
+moved 196 nodes, most improvement 153.066, worst skewness 1.30262
+moved 84 nodes, most improvement 106.509, worst skewness 1.28616
+moved 58 nodes, most improvement 3.24899, worst skewness 1.27579
+moved 42 nodes, most improvement 100.24, worst skewness 1.20678
+moved 34 nodes, most improvement 3.06097, worst skewness 1.12717
+moved 29 nodes, most improvement 2.83942, worst skewness 1.11152
+moved 32 nodes, most improvement 99.1639, worst skewness 1.08247
+moved 29 nodes, most improvement 99.123, worst skewness 1.07797
+moved 19 nodes, most improvement 99.0638, worst skewness 1.07351
+moved 12 nodes, most improvement 99.0598, worst skewness 1.06979
+moved 16 nodes, most improvement 99.1382, worst skewness 1.06118
+moved 13 nodes, most improvement 0.296216, worst skewness 1.05761
+moved 12 nodes, most improvement 0.212623, worst skewness 1.05243
+moved 11 nodes, most improvement 99.0387, worst skewness 1.05161
+moved 4 nodes, most improvement 0.0315193, worst skewness 1.05153
+moved 2 nodes, most improvement 0.0151055, worst skewness 1.05153
+moved 3 nodes, most improvement 0.0232829, worst skewness 1.05131
+moved 11 nodes, most improvement 0.104432, worst skewness 1.05122
+moved 9 nodes, most improvement 0.0318152, worst skewness 1.05112
+moved 5 nodes, most improvement 0.0378288, worst skewness 1.05092
+moved 2 nodes, most improvement 0.00508847, worst skewness 1.05089
+moved 3 nodes, most improvement 0.00874481, worst skewness 1.05082
+moved 2 nodes, most improvement 0.0095389, worst skewness 1.05075
+moved 3 nodes, most improvement 0.00531213, worst skewness 1.0507
+moved 3 nodes, most improvement 0.154865, worst skewness 1.05022
+done.
+
+remesh cells with quality above 0.990000
+1 cells above threshold, 27 cells remeshed (0 postponed).
+
+smooth-improve poly cells
+No cell above quality 0.980000 with worst quality 0.979991
+done.
+
+smooth-improve poly cells
+73 cells above quality 0.950000 with worst quality 0.979991
+moved 101 nodes, most improvement 0.167474, worst skewness 0.976526
+moved 42 nodes, most improvement 0.215036, worst skewness 0.976384
+moved 31 nodes, most improvement 0.0395661, worst skewness 0.974657
+moved 22 nodes, most improvement 0.0197154, worst skewness 0.96963
+moved 24 nodes, most improvement 0.0186939, worst skewness 0.965953
+moved 21 nodes, most improvement 0.0874125, worst skewness 0.959936
+moved 15 nodes, most improvement 0.0393821, worst skewness 0.955585
+moved 6 nodes, most improvement 0.00680097, worst skewness 0.94992
+moved 0 nodes, most improvement 0, worst skewness 0.94992
+done.
+
+smooth-improve poly cells
+80 cells above quality 0.926250 with worst quality 0.949946
+moved 117 nodes, most improvement 0.200885, worst skewness 0.948063
+moved 40 nodes, most improvement 0.0154218, worst skewness 0.946511
+moved 25 nodes, most improvement 0.0305246, worst skewness 0.943619
+moved 14 nodes, most improvement 0.0220676, worst skewness 0.942488
+moved 13 nodes, most improvement 0.021697, worst skewness 0.939178
+moved 12 nodes, most improvement 0.0256127, worst skewness 0.931736
+moved 7 nodes, most improvement 0.0103408, worst skewness 0.925272
+moved 0 nodes, most improvement 0, worst skewness 0.925272
+done.
+
+smooth poly cells
+241 cells above quality 0.800000 with worst quality 0.926248
+moved 322 nodes, most improvement 0.237807, worst skewness 0.923402
+moved 104 nodes, most improvement 0.216965, worst skewness 0.921623
+moved 77 nodes, most improvement 0.0979487, worst skewness 0.915811
+moved 61 nodes, most improvement 0.14507, worst skewness 0.910623
+moved 30 nodes, most improvement 0.0450482, worst skewness 0.905657
+done.
+
+merging short edges and faces ...
+	merged 2 short edges.
+	merged 0 small area faces.
+	removed 0 valence-2 interior nodes.
+	modified 0 cells connectivity.
+	removed 0 flat cell.
+done.
+
+remesh cells with size-change above 1000.000000
+0 cells above threshold, 0 cells remeshed (0 postponed).
+
+smooth-improve poly cells
+No cell above quality 0.926250 with worst quality 0.905657
+done.
+
+
+
+Resetting quality measure.
+done.
+
+Poly Mesh Summary:
+	         0 prism poly cells created
+	    150679       poly cells created
+	    150679 total poly cells created
+
+
+associating cell zones with regions...
+done.
+
+Improving volume mesh by node-movement to Target Orthogonal Quality : 0.05
+...
+No cell above quality 0.950000.
+Done.
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Mesh Generation|Model|Mesh Objects|surf|Cell Zones|blood"))
+(cx-gui-do cx-list-tree-right-click "NavigationPane*Frame2*Table1*List_Tree2" )
+(cx-gui-do cx-activate-item "MenuBar*Draw OptionsSubMenu*Add")
+(cx-gui-do cx-activate-item "Auto Mesh*PanelButtons*PushButton1(Close)")
+(cx-gui-do cx-activate-item "MenuBar*WriteSubMenu*Mesh...")
+(cx-gui-do cx-set-file-dialog-entries "Select File" '( "pr_stent_mesh1.msh.h5") "CFF Mesh Files (*.msh.h5 )")
+Writing "F:/POLITO/Innovations/progettp_innovations/pr_stent_mesh1.msh.h5" ...
+writing 19 node zones
+writing 34 edge zones 
+writing 13 face zones 
+writing 1 cell zones 
+writing boundary layer flags
+done.(cx-gui-do cx-activate-item "MenuBar*WriteSubMenu*Case...")
+(cx-gui-do cx-set-file-dialog-entries "Select File" '( "pr_stent_mesh1.cas.h5") "CFF Case Files (*.cas.h5 )")
+
+The case file is being written in the mesher mode.
+Previously saved data files are incompatible and should not be read with this case file.
+
+Writing "F:/POLITO/Innovations/progettp_innovations/pr_stent_mesh1.cas.h5" ...
+writing 19 node zones
+writing 13 face zones 
+writing 1 cell zones 
+writing boundary layer flags
+done.(cx-gui-do cx-activate-item "Information*OK")
+/exit y
+
+Posting ANSYS Product Improvement Program performance data 
+Done.
+Auto-Transcript Stop Time:  17:15:09, 10 Jun 2024 W. Europe Daylight Time 
+Total Transcript Time: 24 Minute 27 Second.
