@@ -1,0 +1,54 @@
+Indicazioni per le mesh 
+
+stent curvo 
+mesh 1 
+global scopa sizing -----> min = 0.003;max=0.08;growrate=1.2;
+local scope sizing ( stent e wall stent) -----> min = 0.003;max=0.08;growrate=1.2;
+local scope sizing (parti non stent) ------> min = 0.01;max=0.08;growrate=1.2;
+-------------------------------------------------------
+mesh 2 
+global scopa sizing -----> min = 0.0045;max=0.12;growrate=1.2;
+local scope sizing ( stent e wall stent) ----->min = 0.0045;max=0.12;growrate=1.2;
+local scope sizing (parti non stent) ------> min = 0.03;max=0.12;growrate=1.2;
+-------------------------------------------------------
+mesh 3 
+global scopa sizing -----> min = 0.0015;max=0.04;growrate=1.2;
+local scope sizing ( stent e wall stent) ----->min = 0.0015;max=0.04;growrate=1.2;
+local scope sizing (parti non stent) ------> min = 0.005;max=0.04;growrate=1.2;
+--------------------------------------------------------------------------
+mesh 5
+global scopa sizing -----> min = 0.00525;max=0.14;growrate=1.2;
+local scope sizing ( stent e wall stent) ----->min = 0.00525;max=0.14;growrate=1.2;
+local scope sizing (parti non stent) ------> min = 0.0175;max=0.07;growrate=1.2;
+-----------------------------------------------------------------------------
+mesh 4 
+global scopa sizing -----> min = 0.002;max=0.06;growrate=1.2;
+local scope sizing ( stent e wall stent) -----> min = 0.003;max=0.08;growrate=1.2;
+local scope sizing (parti non stent) ------> min = 0.01;max=0.08;growrate=1.2;
+----------------------------------------------------------------------------
+mesh 3 modificata 
+ 
+global scopa sizing -----> min = 0.05;max=0.8;growrate=1.2;
+local scope sizing ( stent e wall stent) -----> min = 0.05;max=0.8;growrate=1.2;
+local scope sizing (parti non stent) ------> min = 0.1;max=0.8;growrate=1.2;
+
+----------------------------------------------------------------------------
+mesh 3 grossa
+
+global scopa sizing -----> min = 0.1;max=0.9;growrate=1;
+local scope sizing ( stent e wall stent) -----> min = 0.1;max=0.9;growrate=1;
+local scope sizing (parti non stent) ------> min = 0.3;max=0.9;growrate=1;
+
+----------------------------------------------------------------------------
+mesh 3 grossissima
+
+global scopa sizing -----> min = 0.3;max=2;growrate=1;
+local scope sizing ( stent e wall stent) -----> min = 0.3;max=2;growrate=1;
+local scope sizing (parti non stent) ------> min = 0.6;max=2;growrate=1;
+
+----------------------------------------------------------------------------
+mesh 3 speranza
+
+global scopa sizing -----> min = 0.3;max=2;growrate=2;
+local scope sizing ( stent e wall stent) -----> min = 0.3;max=2;growrate=2;
+local scope sizing (parti non stent) ------> min = 0.6;max=2;growrate=2;
